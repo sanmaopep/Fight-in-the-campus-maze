@@ -1,0 +1,37 @@
+extends ../layout
+block content
+	link(href="/bootstrap/dist/css/bootstrap.min.css",rel = "stylesheet")
+	link(rel="stylesheet", href="/lf/dist/leaflet.css")
+	link(rel="stylesheet", href="/css/map_main.css")
+	link(href="/lf-plugin/MousePosition/src/L.Control.MousePosition.css",rel = "stylesheet")
+	link(href="/lf-plugin/draw-0.2.4/dist/draw.css",rel = "stylesheet")
+
+	nav(class ="navbar navbar-inverse navbar-fixed-top")
+		div.container-fluid
+			div.navbar-header
+				button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar")
+					span.sr-only Toggle Navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.navbar-brand(href="#") 毛线的校园
+			div#navbar.navbar-collapse.collapse
+				ul.nav.navbar-nav.navbar-right
+					li
+						a(href="javacript:;" onClick="searchForBuilding()") 查找建筑物
+					li
+						a(href="javacript:;" onClick="putIconInReference()") 添加标签
+	.view-main
+		#map.view-map
+			#map-toolbar.btn-group.toolbar-top(role="group",aria-label="...")
+				button.btn.btn-default.btn-sm(type="button", onclick="StartModifyVec()")
+					span.glyphicon.glyphicon-edit  开始编辑
+				button.btn.btn-default.btn-sm(type="button", onclick="EndModifyVec()")
+					span.glyphicon.glyphicon-ok  结束编辑
+
+	script(src="/jquery/dist/jquery.min.js")
+	script(src="/bootstrap/dist/js/bootstrap.min.js")
+	script(src="/lf/dist/leaflet-src.js")
+	script(src="/lf-plugin/MousePosition/src/L.Control.MousePosition.js")
+	script(src="/lf-plugin/draw-0.2.4/dist/draw.js")
+	script(src="/js/map_main.js")

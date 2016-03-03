@@ -1,0 +1,30 @@
+extends ../layout
+block content
+	link(rel="stylesheet", href="/lf/dist/leaflet.css")
+	link(rel="stylesheet", href="/css/map_main.css")
+
+	nav(class ="navbar navbar-inverse navbar-fixed-top")
+		div.container-fluid
+			div.navbar-header
+				button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar")
+					span.sr-only Toggle Navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.navbar-brand(href="#") 三维数字校园系统
+			div#navbar.navbar-collapse.collapse
+				ul.nav.navbar-nav.navbar-right
+					li
+						a(href="javacript:'") Dashboard
+					li
+						a(href="javacript:'"  ) Setting
+					li
+						a(href="javacript:'") Profile
+					li
+						a(href="javacript:'") 退出
+	.view-main
+		#map.view-map
+
+	script(src="/lf/dist/leaflet-src.js")
+	script(src="/jquery/dist/jquery.min.js")
+	script(src="/js/map_main.js")

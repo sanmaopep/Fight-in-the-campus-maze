@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>Hello APP</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <link rel="stylesheet" type="text/css" href="../css/leaflet.css" />
+	<link rel="stylesheet" type="text/css" href="../css/draw.css" />
+	<style>
+		#con{
+			margin: 10px;
+			font-size: 24px; 
+		}
+		ul{
+			margin-bottom: 10px;
+		}
+		ul li{ 
+			margin: 5px 10px;
+			padding: 5px;
+			color: #000;
+			word-wrap: break-word;
+		}
+		html {
+		  height: 100%; }
+
+		body {
+		  height: 100%;
+		  margin: 0px;
+		  padding: 0px; }
+		.view-map{
+			height: 100%;
+		}
+
+	</style>
+</head>
+<body>
+<!--	<div id="front">
+	
+	</div>-->
+	<div id="map" class="view-map"></div>
+
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/jquery.js"></script>
+<script type="text/javascript" src="../script/leaflet-src.js"></script>
+<script type="text/javascript" src="../script/draw.js"></script>
+<script type="text/javascript" src="../script/draw-src.js"></script>
+<script type="text/javascript" src="../script/map.js"></script>
+
+<script type="text/javascript">
+	 onload = initMap();
+    apiready = function(){
+		
+    };
+</script>
+</html>

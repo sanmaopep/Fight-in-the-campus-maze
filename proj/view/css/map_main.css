@@ -1,0 +1,32 @@
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px; }
+
+.view-main {
+  width: 100%;
+  height: 92%;
+  margin-top: 52px;
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.view-map {
+  width: 100%;
+  height: 100%; 
+  z-index: 0}
+
+.toolbar-top {
+  position: fixed;
+  left: 90%;
+
+  float: left;
+  background-color: #fbfafa;
+  margin-left: -276px;
+  z-index: 200;
+}
+
+
+/*# sourceMappingURL=map_main.css.map */
